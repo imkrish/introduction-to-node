@@ -13,10 +13,10 @@ const evenDouble = (value :number, callback: Function) => {
             callback(null, value * 2, waitTime)
         }, waitTime)
     }
-
 }
 
 const handleResults = (err: any, results: number, time: number) => {
+    
     if (err) {
         console.log('Error: ' + err.message)
     } else {
