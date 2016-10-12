@@ -1,0 +1,15 @@
+{
+    "compilerOptions": {
+        "module": "commonjs",
+        "target": "es5",
+        "noImplicitAny": true,
+        "experimentalDecorators": true,
+        "sourceMap": false,
+        "strictNullChecks": true, // if type is not null, the compiler will warn
+        "noEmitOnError": false, // don't create js files, if there are errors in TypeScript'
+        "noUnusedParameters": true
+    },
+    "exclude": [
+        "node_modules"
+    ]
+}
