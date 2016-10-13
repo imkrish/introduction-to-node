@@ -2,7 +2,7 @@ import * as request from 'request'
 import * as fs from 'fs'
 import * as zlib from 'zlib'
 
-// readable stream
+// readable stream can pipe
 const s = request('http://www.pluralsight.com')
 
 // to writable stream

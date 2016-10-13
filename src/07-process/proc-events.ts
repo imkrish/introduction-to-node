@@ -12,6 +12,7 @@ process.stdin.on('end', () => {
 
 // kill process.pid
 // kill -TERM process.pid
+
 process.on('SIGTERM', () => {
     process.stderr.write('Why are you trying to terminate me?!?   :-)\n')
 })
