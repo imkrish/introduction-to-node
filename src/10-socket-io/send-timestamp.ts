@@ -5,7 +5,7 @@ import * as url from 'url'
 import * as path from 'path'
 import * as mime from 'mime'
 
-const log = console.log 
+const log = console.log
 
 const handler = (req: http.ServerRequest, res: http.ServerResponse) => {
 
@@ -44,7 +44,7 @@ const io = socketio.listen(app)
 io.sockets.on('connection', (socket) => {
     setInterval(() => {
         const timestamp = Date.now()
-        console.log('Emitted: ' + timestamp)
+        log('Emitted: ' + timestamp)
 
         // emit event to client
         socket.emit('timer', timestamp)
@@ -52,9 +52,9 @@ io.sockets.on('connection', (socket) => {
 
     // listen from client
     socket.on('submit', (data: string) => {
-        console.log('Submitted: ' + data)
+        log('Submitted: ' + data)
     })
 })
 
 app.listen(9999)
-console.log('Server is running!')
+log('Server is running!')
