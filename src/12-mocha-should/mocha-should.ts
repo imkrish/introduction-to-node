@@ -34,14 +34,9 @@ describe('MathFun', () => {
         it('should return result correctly', (done) => {
 
             evenDoubler(3, (err: Error, results: number) => {
-                console.log(err)
-                console.log(results)
                 should.not.exist(err)
                 should.exist(results)
             })
-
-            console.log('hey')
-
             done()
 
         })
